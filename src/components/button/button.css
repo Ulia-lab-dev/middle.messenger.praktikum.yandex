@@ -1,0 +1,11 @@
+.button {
+  margin: 10px;
+}
+
+.button_submit {
+  background-color: #F333AD;
+  padding: 10px;
+  width: 280px;
+  color: white;
+  border-radius: 5px;
+}
