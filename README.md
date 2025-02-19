@@ -10,3 +10,5 @@
 - `npm run dev` — запуск версии для разработчика,
 - `npm run build` — сборка стабильной версии.
 
+# Продакшн 
+https://pinkmessenger.netlify.app/
