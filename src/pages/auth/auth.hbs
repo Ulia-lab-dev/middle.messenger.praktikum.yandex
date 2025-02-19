@@ -1,0 +1,15 @@
+<div class="container">
+    {{> Heading tag='h1' label='Регистрация'}}
+    <form class="login-form">
+        {{> Input variant="blue" type="email" name='email' label='Почта'}}
+        {{> Input variant="blue" type="text" name='login' label='Логин'}}
+        {{> Input variant="blue" type="text" name='first_name' label='Имя'}}
+        {{> Input variant="blue" type="text" name='second_name' label='Фамилия'}}
+        {{> Input variant="blue" type="tel" name='phone' label='Телефон'}}
+        {{> Input variant="blue" type="password" name='password' label='Пароль'}}
+        {{> Input variant="blue" type="password" name='password' label='Пароль(еще раз)'}}
+
+        {{> Button color="light" type="submit" label="Зарегистрироваться"}}
+    </form>
+    {{> Link label='Войти'}}
+</div>
