@@ -1,0 +1,15 @@
+<div class="profile-container">
+    {{> Avatar avatar='' }}
+    {{> Heading tag='h2' label='Иван'}}
+    <form class="profile-form">
+        {{> Input placeholder="123@mail.ru" variant="grey" type="email" name='email' label='Почта'}}
+        {{> Input placeholder="123" variant="grey" type="text" name='login' label='Логин'}}
+        {{> Input placeholder="Иван" variant="grey" type="text" name='first_name' label='Имя'}}
+        {{> Input placeholder="Иванов" variant="grey" type="text" name='second_name' label='Фамилия'}}
+        {{> Input placeholder="39-99-28" variant="grey" type="tel" name='phone' label='Телефон'}}
+        {{> Input placeholder="39" variant="grey" type="password" name='oldPassword' label='Старый пароль'}}
+        {{> Input placeholder="39" variant="grey" type="password" name='newPassword' label='Новый пароль'}}
+
+        {{> Button color="dark" type="submit" label="Сохранить"}}
+    </form>
+</div>

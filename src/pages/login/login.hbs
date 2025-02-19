@@ -1,10 +1,11 @@
-<div class="container">
-    <div class="container">{{> Heading tag='h1' label='Вход'}}
-        <form class="login-form">
-            {{> Input label='Логин'}}
-            {{> Input label='Пароль'}}
-            {{> Button type='submit' label='Авторизация'}}
-        </form>
-    </div>
+<div class="login-container">
+    {{> Heading tag='h1' label='Вход'}}
+    <form class="login-form">
+        <div class="login-inputs">
+            {{> Input variant="blue" type='text' name='login' label='Логин'}}
+            {{> Input variant="blue" type='password' name='password' label='Пароль'}}
+        </div>
+        {{> Button color="light" type="submit" label="Авторизация"}}
+    </form>
     {{> Link label='Нет аккаунта?'}}
 </div>

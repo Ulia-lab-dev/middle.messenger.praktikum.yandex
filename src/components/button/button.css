@@ -9,3 +9,11 @@
   color: white;
   border-radius: 5px;
 }
+
+.button_light {
+  background-color: #F333AD;
+}
+
+.button_dark {
+  background-color: #9E1169;
+}

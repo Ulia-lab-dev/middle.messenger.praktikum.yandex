@@ -7,7 +7,10 @@ const pages = {
     login: [Pages.LoginPage],
     auth: [Pages.AuthPage],
     messenger: [Pages.MessengerPage],
-    nav: [Pages.NavigatePage]
+    nav: [Pages.NavigatePage],
+    profile: [Pages.ProfilePage],
+    error: [Pages.ServerErrorPage],
+    notFound: [Pages.NotFound]
 }
 
 Object.entries(Components).forEach(([name, template]) => {
@@ -25,16 +28,18 @@ function navigate(page: string) {
     container.innerHTML = templatingFunction(context);
 }
 
-document.addEventListener('DOMContentLoaded', () => navigate('login'));
+document.addEventListener('DOMContentLoaded', () => navigate('nav'));
 
-document.addEventListener('click', e => {
-    // @ts-ignore
-    const page = e.target.getAttribute('page');
-    if (page) {
-        navigate(page);
-
+document.addEventListener('click', (e) => {
+    const link = (e.target as HTMLElement).closest('a'); // Находим ближайшую ссылку
+    if (link && link.getAttribute('href')) {
         e.preventDefault();
         e.stopImmediatePropagation();
+
+        const page = link.getAttribute('href')?.substring(1); // Убираем слеш из href
+        if (page) {
+            navigate(page);
+        }
     }
 });
 

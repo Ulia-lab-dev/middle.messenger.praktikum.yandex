@@ -1,8 +1,18 @@
 .heading {
-  margin: 10px;
+  margin: 20px 0 0;
 }
 
 .heading_h1 {
   font-weight: 600;
   font-size: 22px;
+}
+
+.heading_h2 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.heading_h3 {
+  font-weight: 500;
+  font-size: 16px;
 }
